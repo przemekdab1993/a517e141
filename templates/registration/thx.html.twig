@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Registration thx{% endblock %}
+
+{% block body %}
+
+    <div class="container-main">
+        <div class="row" >
+            <div class="col-6 offset-3 example-wrapper example-wrapper-center">
+                <div class="box-content">
+                    <h1>Sign up</h1>
+                </div>
+
+                <div class="box-content-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="sign-up-form mt-4 p-4">
+                                <h2>Thank you for your registration.</h2>
+                                <p>We have sent an account activation link to the e-mail address provided</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts_end %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('login') }}
+{% endblock %}
+
